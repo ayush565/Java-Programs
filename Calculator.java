@@ -14,7 +14,7 @@ public class Calculator {
 		char operator = input.next().charAt(0);
 		input.close();
 		double result;
-		//Use switch statement to check operator and perform calculation
+		//switch statement to check operator and perform calculation
 		switch(operator)
 		{
 		case '+':
@@ -29,12 +29,12 @@ public class Calculator {
 		case '/':
 		result = num1 / num2;
 		break;
-		// Show an error message if wrong operator
+				
 		default:
 		System.out.printf("Error! operator is not correct");
 		return;
 		}
-		//Show the result of  calculation to the user
+		//result of  calculation to the user
 		System.out.printf("%.2f %c %.2f = %.2f \n", num1, operator, num2, result);
 		}
 }
